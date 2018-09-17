@@ -1,0 +1,26 @@
+#user_label {
+    height: 20px;
+    width: 90px;
+    margin-top: 10px;
+    margin-left: 2px;
+    text-align: right;
+    margin-right:15px;
+    float:left;
+}
+#user_input {
+
+    width: 300px;
+    border: 1px solid #000;
+    margin-top: 10px;
+    background-color: 	#E0E0E0;
+}
+
+
+#user_hr{
+    width: 50%;
+    background-color:  #035b80;
+    height: 2px; 
+    border: none;
+    float:left;
+}
+

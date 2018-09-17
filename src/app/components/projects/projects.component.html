@@ -1,0 +1,12 @@
+<form class="form-horizontal" style="text-align:center">
+  <div class="form-group">
+      <span id="heading1">Projects</span>
+      <br><br>
+      <div *ngFor="let project of projects">
+          <button  style="width:25%" type="button" class="btn btn-info" data-toggle="modal" data-target="#proj_details">
+           {{project.proj_name}}
+          </button>
+      <br><br>
+      </div>
+  </div>
+</form>
