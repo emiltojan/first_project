@@ -13,24 +13,20 @@
   </div>
   <div style="margin-left: 160px">
   <button style="width:10%" class="btn btn-primary" type="submit">Add</button>
+  &nbsp;
   <button style="width:10%" class="btn btn-primary">Reset</button>
   </div>
 </form>
 <hr id="user_hr">
 <br><br>
-<table>
-<thead>
-  <tr>
-    <th sortable-column="id">Employee Id</th>
-    <th sortable-column="firstName">First Name</th>
-    <th sortable-column="lastName">Last Name</th>
-  </tr>
-</thead>
-<tbody>
-  <tr *ngFor="let user of users">
-    <td>{{user._id}}</td>
-    <td>{{user.firstName}}</td>
-    <td>{{user.lastName}}</td>
-  </tr>
-</tbody>
-</table> 
+
+<ag-grid-angular 
+    style="width: 500px; height: 500px;" 
+    class="ag-theme-balham"
+    (gridReady)="onGridReady($event)"
+    [enableSorting]="true"
+    [enableFilter]="true"
+    [rowData]="rowData" 
+    [columnDefs]="columnDefs"
+    >
+</ag-grid-angular>
